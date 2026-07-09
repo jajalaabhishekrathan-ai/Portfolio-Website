@@ -1,228 +1,241 @@
 
-  <!DOCTYPE html>
-  <!--
-    Generated with CSEdge Portfolio Builder
-    https://csedge.co
-    Author: CSEdge - Empowering Developers Worldwide
-    Template: Modern Portfolio
-  -->
-  <html lang="en" class="scroll-smooth">
-  <head>
-<meta name="description" content="Iam an alcoholic only raw some times pal wine and staff chicken Manchurian " />
+<!DOCTYPE html>
+<!--
+  Generated with CSEdge Portfolio Builder
+  https://csedge.co
+  Author: CSEdge - Empowering Developers Worldwide
+  Template: Glassmorphism Pro
+-->
+<html lang="en">
+<head>
+<meta name="description" content="Iam a student and a sports enthusiasts and an artist " />
 <meta property="og:title" content="Jajala Abhishek Rathan   Portfolio" />
-<meta property="og:description" content="Iam an alcoholic only raw some times pal wine and staff chicken Manchurian " />
+<meta property="og:description" content="Iam a student and a sports enthusiasts and an artist " />
 <meta name="twitter:card" content="summary" />
     <meta charset="UTF-8">
-    <title>Jajala Abhishek Rathan </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jajala Abhishek Rathan  | Glassmorphism Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <style>
-      :root {
-        --bg-color: #000000;
-        --text-color: #ffffff;
-        --accent-color: #5448F9;
-        --secondary-accent: #36d1dc;
-        --card-bg: #0d0d0d;
-        --nav-bg: #050505;
-        --border-color: #333333;
-        --muted-text: rgba(255,255,255,0.6);
-      }
-      
-      * { margin: 0; padding: 0; box-sizing: border-box; }
-      
-      body { 
-        font-family: 'Outfit', sans-serif; 
-        background-color: var(--bg-color); 
-        color: var(--text-color);
-        line-height: 1.6;
-        overflow-x: hidden;
-      }
-      
-      /* Scrollbar */
-      ::-webkit-scrollbar { width: 8px; }
-      ::-webkit-scrollbar-track { background: var(--bg-color); }
-      ::-webkit-scrollbar-thumb { background: var(--accent-color); border-radius: 4px; }
-      
-      /* Navbar */
-      .navbar {
-        position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
-        background: var(--nav-bg);
-        backdrop-filter: blur(12px);
-        border-bottom: 1px solid var(--border-color);
-        transition: all 0.3s ease;
-      }
-      .nav-container {
-        max-width: 1200px; margin: 0 auto; padding: 1rem 2rem;
-        display: flex; justify-content: space-between; align-items: center;
-      }
-      .logo { font-weight: 700; font-size: 1.5rem; background: linear-gradient(135deg, var(--accent-color), var(--secondary-accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-      
-      .nav-links { display: none; gap: 2rem; }
-      @media(min-width: 768px) { .nav-links { display: flex; } }
-      .nav-link { color: var(--text-color); text-decoration: none; font-weight: 500; transition: color 0.3s; }
-      .nav-link:hover { color: var(--accent-color); }
+        :root {
+            --bg: #000000;
+            --text: #ffffff;
+            --accent: #5448F9;
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-blur: blur(20px);
+        }
 
-      /* Hero */
-      .hero {
-        min-height: 100vh;
-        display: flex; align-items: center; justify-content: center;
-        position: relative; padding: 6rem 2rem 4rem;
-        overflow: hidden;
-      }
-      .hero-bg {
-        position: absolute; inset: 0; z-index: -1;
-        background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.03) 0%, transparent 20%),
-                    radial-gradient(circle at 90% 80%, rgba(255,255,255,0.03) 0%, transparent 20%);
-      }
-      .hero-content {
-        max-width: 1200px; width: 100%;
-        display: grid; grid-template-columns: 1fr; gap: 4rem; align-items: center;
-      }
-      @media(min-width: 900px) { .hero-content { grid-template-columns: 1.2fr 1fr; } }
-      
-      .hero-text h1 {
-        font-size: clamp(2.5rem, 5vw, 4.5rem);
-        line-height: 1.1; font-weight: 800; margin-bottom: 1.5rem;
-        letter-spacing: -0.02em;
-      }
-      .hero-tagline {
-        font-size: 1.2rem; margin-bottom: 2.5rem; color: var(--muted-text); max-width: 600px;
-      }
-      .btn {
-        display: inline-flex; align-items: center; gap: 0.5rem;
-        padding: 0.8rem 2rem; border-radius: 50px;
-        font-weight: 600; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
-      }
-      .btn-primary {
-        background: linear-gradient(135deg, var(--accent-color), var(--secondary-accent));
-        color: white; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-      }
-      .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
-      /* Stats / Grid for Hero Image */
-      .hero-visual {
-        position: relative; display: flex; justify-content: center;
-      }
-      .profile-blob {
-        width: 300px; height: 300px; border-radius: 50%;
-        object-fit: cover; border: 4px solid var(--card-bg);
-        box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-        z-index: 2; position: relative;
-        animation: float 6s ease-in-out infinite;
-      }
-      @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(168, 85, 247, 0.15) 0px, transparent 50%);
+        }
 
-      /* Sections General */
-      .section { padding: 6rem 2rem; }
-      .container { max-width: 1200px; margin: 0 auto; }
-      .section-header { margin-bottom: 4rem; text-align: center; }
-      .section-title {
-        font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;
-        background: linear-gradient(135deg, var(--accent-color), var(--secondary-accent));
-        -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-        display: inline-block;
-      }
-      
-      /* Skills */
-      .skills-container { display: grid; gap: 2rem; }
-      .skill-category h3 { font-size: 1.2rem; margin-bottom: 1rem; opacity: 0.9; }
-      .skill-cloud { display: flex; flex-wrap: wrap; gap: 0.8rem; }
-      .skill-pill {
-        padding: 0.6rem 1.2rem; border-radius: 12px;
-        background: var(--card-bg); border: 1px solid var(--border-color);
-        font-weight: 500; font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;
-        transition: all 0.2s;
-      }
-      .skill-pill:hover {
-        border-color: var(--accent-color); transform: translateY(-3px);
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-      }
-      .skill-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent-color); }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
 
-      /* Experience Timeline */
-      .timeline { position: relative; max-width: 800px; margin: 0 auto; }
-      .timeline::before {
-        content: ''; position: absolute; left: 0; top: 0; bottom: 0;
-        width: 2px; background: var(--border-color);
-        display: none; /* Mobile hidden by default, can act differently if needed */
-      }
-      @media(min-width: 768px) { .timeline::before { display: block; left: 50%; transform: translateX(-1px); } }
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
 
-      .timeline-item {
-        margin-bottom: 3rem; position: relative; width: 100%;
-        display: flex; flex-direction: column; gap: 1rem;
-      }
-      @media(min-width: 768px) {
-        .timeline-item { flex-direction: row; justify-content: center; align-items: center; gap: 4rem; }
-        .timeline-item:nth-child(even) { flex-direction: row-reverse; }
-        .timeline-content { width: 45%; text-align: right; }
-        .timeline-item:nth-child(even) .timeline-content { text-align: left; }
-        .timeline-date { width: 45%; text-align: left; }
-        .timeline-item:nth-child(even) .timeline-date { text-align: right; }
-      }
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
 
-      .timeline-dot {
-        width: 16px; height: 16px; background: var(--accent-color);
-        border-radius: 50%; border: 4px solid var(--bg-color);
-        box-shadow: 0 0 0 2px var(--accent-color);
-        position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
-        display: none; z-index: 5;
-      }
-      @media(min-width: 768px) { .timeline-dot { display: block; } }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-      .timeline-card {
-        background: var(--card-bg); padding: 1.5rem; border-radius: 16px;
-        border: 1px solid var(--border-color);
-        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-      }
-      .role { font-weight: 700; font-size: 1.1rem; color: var(--text-color); }
-      .company { color: var(--accent-color); font-weight: 500; font-size: 0.95rem; margin-bottom: 0.5rem; }
-      .desc { font-size: 0.9rem; opacity: 0.8; }
-      .date-badge {
-        display: inline-block; padding: 0.3rem 0.8rem; border-radius: 20px;
-        background: rgba(255,255,255,0.1);
-        font-size: 0.85rem; font-weight: 500;
-      }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--glass-border);
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
 
-      /* Projects Grid */
-      .projects-grid {
-        display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;
-      }
-      .project-card {
-        background: var(--card-bg); border-radius: 20px; overflow: hidden;
-        border: 1px solid var(--border-color); transition: all 0.3s ease;
-        display: flex; flex-direction: column;
-      }
-      .project-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
-      .project-img {
-        width: 100%; height: 200px; object-fit: cover; background: var(--border-color);
-      }
-      .project-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
-      .project-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; }
-      .project-desc { 
-        font-size: 0.95rem; opacity: 0.8; margin-bottom: 1.5rem; flex: 1;
-        display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
-      }
-      .project-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; }
-      .tag { font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 4px; background: rgba(255,255,255,0.1); }
+        .name {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, rgba(255,255,255,0.5));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-      /* Footer */
-      footer {
-        padding: 4rem 2rem; text-align: center; border-top: 1px solid var(--border-color);
-        background: var(--card-bg); margin-top: 4rem;
-      }
-      .social-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2rem; }
-      .social-icon {
-        width: 45px; height: 45px; border-radius: 50%;
-        display: flex; align-items: center; justify-content: center;
-        background: rgba(255,255,255,0.05);
-        color: var(--text-color); font-size: 1.2rem; transition: all 0.2s;
-      }
-      .social-icon:hover { background: var(--accent-color); color: white; transform: translateY(-3px); }
+        .about {
+            font-size: 1.25rem;
+            max-width: 700px;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-title::after {
+            content: "";
+            height: 1px;
+            flex: 1;
+            background: linear-gradient(to right, var(--glass-border), transparent);
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill-tag {
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            padding: 0.75rem 1.5rem;
+            border-radius: 100px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .skill-tag:hover {
+            border-color: var(--accent);
+            background: rgba(255,255,255,0.05);
+            transform: translateY(-2px);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-desc {
+            font-size: 0.95rem;
+            opacity: 0.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .exp-item {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .exp-date {
+            min-width: 150px;
+            font-size: 0.9rem;
+            opacity: 0.5;
+            font-weight: 500;
+            padding-top: 0.25rem;
+        }
+
+        .exp-content h3 { font-size: 1.25rem; margin-bottom: 0.25rem; }
+        .exp-content p { opacity: 0.6; font-size: 0.95rem; }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 15px;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            font-size: 1.25rem;
+            transition: 0.3s;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .name { font-size: 2.5rem; }
+            .exp-item { flex-direction: column; gap: 0.5rem; }
+            .exp-date { min-width: auto; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+
+        .accent-glow {
+            position: fixed;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+            opacity: 0.1;
+            filter: blur(50px);
+            pointer-events: none;
+            z-index: -1;
+        }
     </style>
-  
+
 <script>
 (function(){
   var uid = 'KPY6xPXz4fcGIkllUDmmVwIAwq82';
@@ -250,414 +263,228 @@
 })();
 </script>
 </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="#" class="logo">Jajala Abhishek Rathan </a>
-        <div class="nav-links">
-          <a href="#about" class="nav-link">About</a>
-          <a href="#skills" class="nav-link">Skills</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#experience" class="nav-link">Experience</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </div>
-      </div>
-    </nav>
+<body>
+    <div class="accent-glow" style="top: -100px; right: -100px;"></div>
+    <div class="accent-glow" style="bottom: -100px; left: -100px;"></div>
 
-    <!-- Hero -->
-    <section id="about" class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-content">
-        <div class="hero-text" data-aos="fade-right">
-          <div class="hero-tagline">Hello, I'm</div>
-          <h1>Jajala Abhishek Rathan </h1>
-          <p class="hero-tagline" style="margin-bottom: 2rem;">
-            Iam an alcoholic only raw some times pal wine and staff chicken Manchurian 
-          </p>
-          <div class="flex gap-4" style="flex-wrap:wrap">
-             <a href="https://github.com/alexjohnson" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> GitHub</a>
-             <a href="https://linkedin.com/in/alexjohnson" target="_blank" class="btn" style="background:rgba(255,255,255,0.1)"><i class="fab fa-linkedin"></i> LinkedIn</a>
-             <a href="https://example.com/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn" style="background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15)"><i class="fas fa-file-pdf"></i> Resume</a>
-          </div>
-        </div>
-        <div class="hero-visual" data-aos="zoom-in">
-          <img src="https://ui-avatars.com/api/?name=Jajala%20Abhishek%20Rathan%20&background=random&size=300" alt="Jajala Abhishek Rathan " class="profile-blob">
-        </div>
-      </div>
-    </section>
+    <div class="container">
+        <section class="hero">
+            <img src="https://ui-avatars.com/api/?name=Jajala%20Abhishek%20Rathan%20&background=random" class="profile-img" alt="Jajala Abhishek Rathan ">
+            <h1 class="name">Jajala Abhishek Rathan </h1>
+            <p class="about">Iam a student and a sports enthusiasts and an artist </p>
+            <div class="social-links">
+                <a href="https://github.com/alexjohnson" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/alexjohnson" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/alexjohnson" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:jajalaabhishekrathan@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
 
-    <!-- Skills -->
-    
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title">Skills & Expertise</h2>
-        </div>
-        <div class="skills-container">
-          
-              <div class="skill-category" data-aos="fade-up" data-aos-delay="0">
-                <h3>Frontend</h3>
-                <div class="skill-cloud">
-                  
-                    <div class="skill-pill">
-                      <div class="skill-dot"></div>
-                      <span>React</span>
-                      <span style="opacity:0.6; font-size:0.8em; margin-left:0.2em">(Expert)</span>
-                    </div>
-                  
-                    <div class="skill-pill">
-                      <div class="skill-dot"></div>
-                      <span>TypeScript</span>
-                      <span style="opacity:0.6; font-size:0.8em; margin-left:0.2em">(Advanced)</span>
-                    </div>
-                  
-                </div>
-              </div>
-            
-              <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                <h3>Backend</h3>
-                <div class="skill-cloud">
-                  
-                    <div class="skill-pill">
-                      <div class="skill-dot"></div>
-                      <span>Node.js</span>
-                      <span style="opacity:0.6; font-size:0.8em; margin-left:0.2em">(Expert)</span>
-                    </div>
-                  
-                    <div class="skill-pill">
-                      <div class="skill-dot"></div>
-                      <span>Python</span>
-                      <span style="opacity:0.6; font-size:0.8em; margin-left:0.2em">(Intermediate)</span>
-                    </div>
-                  
-                    <div class="skill-pill">
-                      <div class="skill-dot"></div>
-                      <span>PostgreSQL</span>
-                      <span style="opacity:0.6; font-size:0.8em; margin-left:0.2em">(Advanced)</span>
-                    </div>
-                  
-                    <div class="skill-pill">
-                      <div class="skill-dot"></div>
-                      <span>MongoDB</span>
-                      <span style="opacity:0.6; font-size:0.8em; margin-left:0.2em">(Intermediate)</span>
-                    </div>
-                  
-                </div>
-              </div>
-            
-              <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                <h3>DevOps</h3>
-                <div class="skill-cloud">
-                  
-                    <div class="skill-pill">
-                      <div class="skill-dot"></div>
-                      <span>AWS</span>
-                      <span style="opacity:0.6; font-size:0.8em; margin-left:0.2em">(Advanced)</span>
-                    </div>
-                  
-                    <div class="skill-pill">
-                      <div class="skill-dot"></div>
-                      <span>Docker</span>
-                      <span style="opacity:0.6; font-size:0.8em; margin-left:0.2em">(Advanced)</span>
-                    </div>
-                  
-                    <div class="skill-pill">
-                      <div class="skill-dot"></div>
-                      <span>Git</span>
-                      <span style="opacity:0.6; font-size:0.8em; margin-left:0.2em">(Expert)</span>
-                    </div>
-                  
-                    <div class="skill-pill">
-                      <div class="skill-dot"></div>
-                      <span>CI/CD</span>
-                      <span style="opacity:0.6; font-size:0.8em; margin-left:0.2em">(Advanced)</span>
-                    </div>
-                  
-                </div>
-              </div>
-            
-        </div>
-      </div>
-    </section>
-    
+        
+        <section>
+            <h2 class="section-title">Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">React</div><div class="skill-tag">TypeScript</div><div class="skill-tag">Node.js</div><div class="skill-tag">Python</div><div class="skill-tag">AWS</div><div class="skill-tag">Docker</div><div class="skill-tag">PostgreSQL</div><div class="skill-tag">MongoDB</div><div class="skill-tag">Git</div><div class="skill-tag">CI/CD</div>
+            </div>
+        </section>
+        
 
-    <!-- Projects -->
-    
-    <section id="projects" class="section" style="background: var(--card-bg)">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title">Featured Projects</h2>
-        </div>
-        <div class="projects-grid">
-          
-            <article class="project-card" data-aos="fade-up" data-aos-delay="0">
-              <div class="project-img-wrapper" style="overflow:hidden">
-                 <img 
-                   src="https://placehold.co/600x400/222/white?text=E-Commerce%20Platform" 
-                   alt="E-Commerce Platform" 
-                   class="project-img"
-                 >
-              </div>
-              <div class="project-body">
-                <h3 class="project-title">E-Commerce Platform</h3>
-                <p class="project-desc">Built a full-stack e-commerce platform with React, Node.js, and PostgreSQL. Implemented payment integration, inventory management, and admin dashboard.</p>
-                <div class="project-tags">
-                  <span class="tag">#React</span><span class="tag">#Node.js</span><span class="tag">#PostgreSQL</span><span class="tag">#Stripe</span>
+        
+        <section style="margin-top: 5rem;">
+            <h2 class="section-title">Selected Work</h2>
+            <div class="projects-grid">
+                
+                <div class="glass-card project-card">
+                    <img src="https://placehold.co/600x400/000000/ffffff/?text=E-Commerce%20Platform" class="project-img" alt="E-Commerce Platform">
+                    <div class="project-info">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-desc">Built a full-stack e-commerce platform with React, Node.js, and PostgreSQL. Implemented payment integration, inventory management, and admin dashboard.</p>
+                        <a href="https://example.com/ecommerce" target="_blank" class="skill-tag" style="text-decoration: none; display: inline-block;">View Project <i class="fas fa-arrow-right" style="font-size: 0.8rem; margin-left: 0.5rem;"></i></a>
+                    </div>
                 </div>
                 
-                <a href="https://example.com/ecommerce" target="_blank" class="btn btn-primary" style="margin-top:1.5rem; text-align:center; justify-content:center; font-size:0.9rem; padding:0.6rem 0;">View Project</a>
-                
-              </div>
-            </article>
-          
-            <article class="project-card" data-aos="fade-up" data-aos-delay="100">
-              <div class="project-img-wrapper" style="overflow:hidden">
-                 <img 
-                   src="https://placehold.co/600x400/222/white?text=Task%20Management%20App" 
-                   alt="Task Management App" 
-                   class="project-img"
-                 >
-              </div>
-              <div class="project-body">
-                <h3 class="project-title">Task Management App</h3>
-                <p class="project-desc">Developed a collaborative task management application with real-time updates using WebSockets. Features include team collaboration, file attachments, and notifications.</p>
-                <div class="project-tags">
-                  <span class="tag">#React</span><span class="tag">#WebSocket</span><span class="tag">#MongoDB</span><span class="tag">#Express</span>
+                <div class="glass-card project-card">
+                    <img src="https://placehold.co/600x400/000000/ffffff/?text=Task%20Management%20App" class="project-img" alt="Task Management App">
+                    <div class="project-info">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-desc">Developed a collaborative task management application with real-time updates using WebSockets. Features include team collaboration, file attachments, and notifications.</p>
+                        <a href="https://example.com/taskapp" target="_blank" class="skill-tag" style="text-decoration: none; display: inline-block;">View Project <i class="fas fa-arrow-right" style="font-size: 0.8rem; margin-left: 0.5rem;"></i></a>
+                    </div>
                 </div>
                 
-                <a href="https://example.com/taskapp" target="_blank" class="btn btn-primary" style="margin-top:1.5rem; text-align:center; justify-content:center; font-size:0.9rem; padding:0.6rem 0;">View Project</a>
-                
-              </div>
-            </article>
-          
-            <article class="project-card" data-aos="fade-up" data-aos-delay="200">
-              <div class="project-img-wrapper" style="overflow:hidden">
-                 <img 
-                   src="https://placehold.co/600x400/222/white?text=Weather%20Dashboard" 
-                   alt="Weather Dashboard" 
-                   class="project-img"
-                 >
-              </div>
-              <div class="project-body">
-                <h3 class="project-title">Weather Dashboard</h3>
-                <p class="project-desc">Created a weather dashboard that aggregates data from multiple APIs and displays interactive charts and forecasts.</p>
-                <div class="project-tags">
-                  <span class="tag">#React</span><span class="tag">#Chart.js</span><span class="tag">#API Integration</span>
+                <div class="glass-card project-card">
+                    <img src="https://placehold.co/600x400/000000/ffffff/?text=Weather%20Dashboard" class="project-img" alt="Weather Dashboard">
+                    <div class="project-info">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-desc">Created a weather dashboard that aggregates data from multiple APIs and displays interactive charts and forecasts.</p>
+                        <a href="https://example.com/weather" target="_blank" class="skill-tag" style="text-decoration: none; display: inline-block;">View Project <i class="fas fa-arrow-right" style="font-size: 0.8rem; margin-left: 0.5rem;"></i></a>
+                    </div>
                 </div>
                 
-                <a href="https://example.com/weather" target="_blank" class="btn btn-primary" style="margin-top:1.5rem; text-align:center; justify-content:center; font-size:0.9rem; padding:0.6rem 0;">View Project</a>
+            </div>
+        </section>
+        
+
+        
+        <section style="margin-top: 5rem;">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-list">
                 
-              </div>
-            </article>
-          
-        </div>
-      </div>
-    </section>
-    
-
-    <!-- Experience -->
-    
-    <section id="experience" class="section">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title">Work Experience</h2>
-        </div>
-        <div class="timeline">
-          
-            <div class="timeline-item" data-aos="fade-up">
-              <div class="timeline-dot"></div>
-              <div class="timeline-date">
-                <span class="date-badge">Jan 2022 - Present</span>
-              </div>
-              <div class="timeline-content">
-                <div class="timeline-card">
-                  <div class="role">Senior Full-Stack Developer</div>
-                  <div class="company">Tech Innovations Inc.</div>
-                  <div class="desc">Lead development of customer-facing web applications.</div>
+                <div class="glass-card exp-item">
+                    <div class="exp-date">Jan 2022 - Present</div>
+                    <div class="exp-content">
+                        <h3>Senior Full-Stack Developer</h3>
+                        <p style="color: var(--accent); font-weight: 600; margin-bottom: 0.5rem;">Tech Innovations Inc.</p>
+                        <p>Lead development of customer-facing web applications.</p>
+                    </div>
                 </div>
-              </div>
-            </div>
-          
-            <div class="timeline-item" data-aos="fade-up">
-              <div class="timeline-dot"></div>
-              <div class="timeline-date">
-                <span class="date-badge">Jun 2020 - Dec 2021</span>
-              </div>
-              <div class="timeline-content">
-                <div class="timeline-card">
-                  <div class="role">Full-Stack Developer</div>
-                  <div class="company">StartupXYZ</div>
-                  <div class="desc">Developed and maintained multiple client projects.</div>
+                
+                <div class="glass-card exp-item">
+                    <div class="exp-date">Jun 2020 - Dec 2021</div>
+                    <div class="exp-content">
+                        <h3>Full-Stack Developer</h3>
+                        <p style="color: var(--accent); font-weight: 600; margin-bottom: 0.5rem;">StartupXYZ</p>
+                        <p>Developed and maintained multiple client projects.</p>
+                    </div>
                 </div>
-              </div>
+                
             </div>
-          
-        </div>
-      </div>
-    </section>
-    
+        </section>
+        
 
-     <!-- Education -->
-    
-    <section id="education" class="section" style="background: var(--card-bg)">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title">Education</h2>
-        </div>
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem">
-           
-             <div style="padding:1.5rem; border:1px solid var(--border-color); border-radius:12px; background:var(--bg-color)" data-aos="fade-up">
-               <h3 style="font-weight:700; font-size:1.1rem">Bachelor of Science</h3>
-               <div style="color:var(--accent-color); font-weight:500; margin-bottom:0.5rem">State University</div>
-               <div style="font-size:0.9rem; opacity:0.8">Sep 2016 - May 2020</div>
-             </div>
-           
-        </div>
-      </div>
-    </section>
-    
-
-    <!-- Certifications & Awards -->
-    
-    <section class="section">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title">Recognition</h2>
-        </div>
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:2rem">
-          
-            <div class="timeline-card" data-aos="fade-up" style="border-left: 4px solid var(--accent-color)">
-              <div style="font-size: 0.8rem; font-weight: 600; color: var(--muted-text); margin-bottom: 0.5rem;">Aug 2023</div>
-              <div class="role" style="font-size: 1.1rem;">AWS Certified Solutions Architect</div>
-              <div class="company">Amazon Web Services</div>
-              
-            </div>
-          
-            <div class="timeline-card" data-aos="fade-up" style="border-left: 4px solid var(--accent-color)">
-              <div style="font-size: 0.8rem; font-weight: 600; color: var(--muted-text); margin-bottom: 0.5rem;">Mar 2022</div>
-              <div class="role" style="font-size: 1.1rem;">Professional Scrum Master I</div>
-              <div class="company">Scrum.org</div>
-              
-            </div>
-          
-          
-            <div class="timeline-card" data-aos="fade-up" style="border-left: 4px solid var(--secondary-accent)">
-              <div style="font-size: 0.8rem; font-weight: 600; color: var(--muted-text); margin-bottom: 0.5rem;">Nov 2023</div>
-              <div class="role" style="font-size: 1.1rem;">First Place - Global Fintech Hackathon</div>
-              <div class="company">HSBC & Google Cloud</div>
-              <p class="desc" style="margin-top: 0.5rem;">Led a team of 4 to build a sustainable investing platform using AI.</p>
-            </div>
-          
-            <div class="timeline-card" data-aos="fade-up" style="border-left: 4px solid var(--secondary-accent)">
-              <div style="font-size: 0.8rem; font-weight: 600; color: var(--muted-text); margin-bottom: 0.5rem;">Dec 2022</div>
-              <div class="role" style="font-size: 1.1rem;">Open Source Contributor of the Year</div>
-              <div class="company">GitHub Community Awards</div>
-              <p class="desc" style="margin-top: 0.5rem;">Recognized for significant contributions to the React ecosystem.</p>
-            </div>
-          
-        </div>
-      </div>
-    </section>
-    
-
-    <!-- Testimonials -->
-    
-    <section class="section" style="background: var(--card-bg)">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title">Client Feedback</h2>
-        </div>
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap:2rem">
-          
-            <div class="timeline-card" data-aos="fade-up" style="position: relative; padding: 2.5rem;">
-              <i class="fas fa-quote-left" style="position: absolute; top: 1.5rem; left: 1.5rem; opacity: 0.1; font-size: 2rem;"></i>
-              <p class="desc" style="font-style: italic; font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem; position: relative; z-index: 1;">
-                Alex is a rare talent who combines technical depth with a keen eye for user experience. Their work on our core platform was transformative.
-              </p>
-              <div style="display: flex; align-items: center; gap: 1rem;">
-                <div style="width: 3rem; height: 3rem; border-radius: 50%; background: linear-gradient(135deg, var(--accent-color), var(--secondary-accent)); display: flex; align-items: center; justify-content: center; color: white; font-weight: 800;">
-                  S
+        
+        <section style="margin-top: 5rem;">
+            <h2 class="section-title">Academic Path</h2>
+            <div class="experience-list">
+                
+                <div class="glass-card exp-item">
+                    <div class="exp-date">Sep 2016 - May 2020</div>
+                    <div class="exp-content">
+                        <h3>Bachelor of Science</h3>
+                        <p style="color: var(--accent); font-weight: 600; margin-bottom: 0.5rem;">State University &bull; Computer Science</p>
+                        <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">GPA: 3.8/4.0</p>
+                        <p>Focused on software engineering and algorithms.</p>
+                    </div>
                 </div>
-                <div>
-                  <div style="font-weight: 700;">Sarah Chen</div>
-                  <div style="font-size: 0.85rem; opacity: 0.6;">Product Manager @ Innovate AI</div>
-                </div>
-              </div>
+                
             </div>
-          
-            <div class="timeline-card" data-aos="fade-up" style="position: relative; padding: 2.5rem;">
-              <i class="fas fa-quote-left" style="position: absolute; top: 1.5rem; left: 1.5rem; opacity: 0.1; font-size: 2rem;"></i>
-              <p class="desc" style="font-style: italic; font-size: 1.05rem; line-height: 1.7; margin-bottom: 2rem; position: relative; z-index: 1;">
-                Exceptional problem solver. Alex delivered a complex microservices architecture ahead of schedule and with impeccable code quality.
-              </p>
-              <div style="display: flex; align-items: center; gap: 1rem;">
-                <div style="width: 3rem; height: 3rem; border-radius: 50%; background: linear-gradient(135deg, var(--accent-color), var(--secondary-accent)); display: flex; align-items: center; justify-content: center; color: white; font-weight: 800;">
-                  M
-                </div>
-                <div>
-                  <div style="font-weight: 700;">Michael Ross</div>
-                  <div style="font-size: 0.85rem; opacity: 0.6;">CTO @ StartupXYZ</div>
-                </div>
-              </div>
-            </div>
-          
-        </div>
-      </div>
-    </section>
-    
+        </section>
+        
 
-    <!-- Languages -->
-    
-    <section class="section">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title">Languages</h2>
-        </div>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
-          
-            <div class="skill-pill" data-aos="zoom-in" style="padding: 1rem 2rem;">
-              <i class="fas fa-language" style="color: var(--accent-color)"></i>
-              <span style="font-weight: 700;">English</span>
-              <span style="opacity: 0.6; font-size: 0.85rem;"> Native/Bilingual</span>
+        
+        <section style="margin-top: 5rem;">
+            <h2 class="section-title">Badges & Honors</h2>
+            <div class="projects-grid">
+                
+                <div class="glass-card project-info" style="padding: 2rem;">
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.5rem;">Aug 2023</div>
+                    <h3 class="project-title">AWS Certified Solutions Architect</h3>
+                    <p class="project-desc">Amazon Web Services</p>
+                    
+                </div>
+                
+                <div class="glass-card project-info" style="padding: 2rem;">
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.5rem;">Mar 2022</div>
+                    <h3 class="project-title">Professional Scrum Master I</h3>
+                    <p class="project-desc">Scrum.org</p>
+                    
+                </div>
+                
             </div>
-          
-            <div class="skill-pill" data-aos="zoom-in" style="padding: 1rem 2rem;">
-              <i class="fas fa-language" style="color: var(--accent-color)"></i>
-              <span style="font-weight: 700;">German</span>
-              <span style="opacity: 0.6; font-size: 0.85rem;"> Professional Working</span>
-            </div>
-          
-            <div class="skill-pill" data-aos="zoom-in" style="padding: 1rem 2rem;">
-              <i class="fas fa-language" style="color: var(--accent-color)"></i>
-              <span style="font-weight: 700;">Spanish</span>
-              <span style="opacity: 0.6; font-size: 0.85rem;"> Limited Working</span>
-            </div>
-          
-        </div>
-      </div>
-    </section>
-    
+        </section>
+        
 
-    <!-- Footer -->
-    <footer id="contact">
-      <div class="container">
-        <h2 style="font-size:2rem; font-weight:700; margin-bottom:2rem">Let's Connect</h2>
-        <div class="social-links">
-           <a href="mailto:jajalaabhishekrathan@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
-           <a href="https://linkedin.com/in/alexjohnson" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-           <a href="https://twitter.com/alexjohnson" target="_blank" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
-           <a href="https://github.com/alexjohnson" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
-        </div>
-        <p style="opacity:0.6; font-size:0.9rem">© 2026 Jajala Abhishek Rathan . Built with <a href="https://csedge.co" target="_blank" style="color:inherit; text-decoration:none; font-weight:600">CSEdge</a>.</p>
-      </div>
-    </footer>
+        
+        <section style="margin-top: 5rem;">
+            <h2 class="section-title">Career Milestones</h2>
+            <div class="projects-grid">
+                
+                <div class="glass-card project-info" style="padding: 2rem;">
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.5rem;">2023</div>
+                    <h3 class="project-title">First Place - Global Fintech Hackathon</h3>
+                    <p class="project-desc">HSBC & Google Cloud</p>
+                    <p class="project-desc" style="font-size: 0.85rem; margin-top: 1rem; opacity: 0.6;">Led a team of 4 to build a sustainable investing platform using AI.</p>
+                </div>
+                
+                <div class="glass-card project-info" style="padding: 2rem;">
+                    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 0.5rem;">2022</div>
+                    <h3 class="project-title">Open Source Contributor of the Year</h3>
+                    <p class="project-desc">GitHub Community Awards</p>
+                    <p class="project-desc" style="font-size: 0.85rem; margin-top: 1rem; opacity: 0.6;">Recognized for significant contributions to the React ecosystem.</p>
+                </div>
+                
+            </div>
+        </section>
+        
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-      AOS.init({ duration: 800, once: true, offset: 50 });
-    </script>
-  
+        
+        <section style="margin-top: 5rem;">
+            <h2 class="section-title">Peer Recognition</h2>
+            <div class="experience-list">
+                
+                <div class="glass-card" style="padding: 2.5rem; margin-bottom: 2rem;">
+                    <div style="font-style: italic; font-size: 1.15rem; line-height: 1.7; margin-bottom: 2rem; position: relative; opacity: 0.9;">
+                        "Alex is a rare talent who combines technical depth with a keen eye for user experience. Their work on our core platform was transformative."
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="width: 2.5rem; height: 2.5rem; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.8rem; color: #fff;">
+                            S
+                        </div>
+                        <div>
+                            <div style="font-weight: 700; font-size: 1rem;">Sarah Chen</div>
+                            <div style="font-size: 0.8rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 0.05em;">Product Manager @ Innovate AI</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card" style="padding: 2.5rem; margin-bottom: 2rem;">
+                    <div style="font-style: italic; font-size: 1.15rem; line-height: 1.7; margin-bottom: 2rem; position: relative; opacity: 0.9;">
+                        "Exceptional problem solver. Alex delivered a complex microservices architecture ahead of schedule and with impeccable code quality."
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 1rem;">
+                        <div style="width: 2.5rem; height: 2.5rem; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.8rem; color: #fff;">
+                            M
+                        </div>
+                        <div>
+                            <div style="font-weight: 700; font-size: 1rem;">Michael Ross</div>
+                            <div style="font-size: 0.8rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 0.05em;">CTO @ StartupXYZ</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+
+        
+        <section style="margin-top: 5rem;">
+            <h2 class="section-title">Global Reach</h2>
+            <div class="skills-grid">
+                
+                <div class="glass-btn" style="text-align: center; padding: 1.5rem;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">English</h3>
+                    <div style="font-size: 0.75rem; color: var(--accent); font-weight: 700; text-transform: uppercase;">Native/Bilingual</div>
+                </div>
+                
+                <div class="glass-btn" style="text-align: center; padding: 1.5rem;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">German</h3>
+                    <div style="font-size: 0.75rem; color: var(--accent); font-weight: 700; text-transform: uppercase;">Professional Working</div>
+                </div>
+                
+                <div class="glass-btn" style="text-align: center; padding: 1.5rem;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Spanish</h3>
+                    <div style="font-size: 0.75rem; color: var(--accent); font-weight: 700; text-transform: uppercase;">Limited Working</div>
+                </div>
+                
+            </div>
+        </section>
+        
+
+        <footer style="margin-top: 8rem; text-align: center; opacity: 0.4; padding-bottom: 4rem;">
+            <p>&copy; 2026 Jajala Abhishek Rathan  &bull; Built with <a href="https://csedge.co" target="_blank" style="color:inherit; text-decoration:none; font-weight:600">CSEdge</a></p>
+        </footer>
+    </div>
+
 <!-- CSEdge Badge -->
 <a href="https://portfolio.pulse.csedge.co" target="_blank" rel="noopener noreferrer" style="position:fixed;bottom:16px;right:16px;z-index:99999;display:inline-flex;align-items:center;gap:6px;padding:6px 12px;background:rgba(10,10,10,0.88);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.13);border-radius:999px;color:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.02em;text-decoration:none;box-shadow:0 4px 20px rgba(0,0,0,0.35);opacity:1;transition:opacity 0.2s" onmouseover="this.style.opacity='0.75'" onmouseout="this.style.opacity='1'"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>Built with CSEdge</a>
 
@@ -670,5 +497,5 @@
   Contact Me
 </a>
 </body>
-  </html>
-  
+</html>
+    
